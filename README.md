@@ -7,6 +7,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -24,6 +25,10 @@ Users should be able to:
 ### Screenshot
 
 ![](article_preview.PNG)
+
+### Links
+
+Live Site URL: https://pearlanyanwu.github.io/article-preview.github.io/
 
 ## My process
 
