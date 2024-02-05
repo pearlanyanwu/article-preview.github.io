@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](article_preview.PNG)
+![](https://pearlanyanwu.github.io/article-preview.github.io/)
 
 ## My process
 
@@ -35,7 +35,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I learned how to implement hide/show functionality on a popup element using JS DOM manipulation.
+<!-- In this project, I learned how to implement hide/show functionality on a popup element using JS DOM manipulation.
 
 ```css
 span {
@@ -52,12 +52,12 @@ const popup = document.getElementById("popup");
 shareButton.addEventListener("click", () => {
   popup.classList.toggle("showApps");
 });
-```
+``` -->
 
 ### Continued Development
 
-- Working on responsiveness on smaller screen sizes.
+- Still working on responsiveness on smaller screen sizes.
 
 ### Useful resources
 
-- [w3schools.com](https://www.w3schools.com/howto/howto_js_popup.asp) - This helped me create the popup and its functionality.
+<!-- - [w3schools.com](https://www.w3schools.com/howto/howto_js_popup.asp) - This helped me create the popup and its functionality. -->

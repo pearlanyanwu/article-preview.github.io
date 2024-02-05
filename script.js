@@ -1,6 +1,7 @@
 const shareButton = document.getElementById("share-button");
-const popup = document.getElementById("popup");
+const profile = document.getElementById("profile-content");
+const popup = document.getElementById("share-content");
 
 shareButton.addEventListener("click", () => {
-  popup.classList.toggle("showApps");
+  profile.replaceWith(popup);
 });
