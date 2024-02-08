@@ -1,115 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
-body {
+body,
+#share-button {
   background-color: hsl(210, 46%, 95%);
 }
 
 * {
   font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
 }
 
-.grid {
-  display: grid;
-  margin: auto;
-  max-width: 360px;
-}
-
-#drawers-img {
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.info {
-  background-color: hsl(0, 0%, 100%);
-}
-
-.info,
-#profile-content,
-#share-content {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-#info-content,
-#profile-content {
-  margin: 30px;
-}
-
-#info-content p:first-of-type {
-  color: hsl(217, 19%, 35%);
-  font-weight: 700;
-  font-size: 18.59px;
-}
-
-#info-content p:last-of-type {
-  color: hsl(214, 17%, 51%);
-  font-size: 5px;
-  width: 99%;
-  margin-bottom: -60px;
-}
-
-.profile {
-  margin-top: 30px;
-}
-
-.profile,
-.popup-content,
-#profile-content {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.profile p:last-of-type {
-  color: hsl(212, 23%, 69%);
-}
-
-.profile:last-of-type {
-  line-height: 1rem;
-  margin-left: 15px;
-}
-
-.profile:last-of-type p {
-  font-size: 10px;
-}
-
-#profile-img {
-  height: 50px;
-}
-
-#profile-img,
-#share-button {
-  border-radius: 50%;
-}
-
-#share-button {
-  float: right;
-  margin-top: 20%;
-  margin-right: 8%;
-  border: 1px solid black;
-  padding: 12px;
-  background-color: hsl(210, 46%, 95%);
-  border: none;
-}
-
-#share-button:hover,
-.icons {
-  cursor: pointer;
-}
-
-.icons {
-  margin: 5px;
-}
-
-#share-label {
-  text-transform: uppercase;
-  font-size: xx-small;
-  letter-spacing: 2px;
-  color: hsl(214, 17%, 51%);
-}
-
-#share-content {
-  background-color: hsl(217, 19%, 35%);
-  padding: 20px 30px;
-  /* display: none; */
-}

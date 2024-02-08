@@ -35,7 +35,7 @@ Live Site URL: https://pearlanyanwu.github.io/article-preview.github.io/
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Grid
+- CSS Flexbox
 - Javascript
 
 ### What I learned
