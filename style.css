@@ -40,12 +40,17 @@ body,
   font-weight: 700;
 }
 
+#info-content p:nth-child(1) {
+  /* font-size: 18.7px; */
+}
+
 #info-content p:nth-child(2) {
   color: hsl(214, 17%, 51%);
+  /* font-size: 15px; */
 }
 
 .content {
-  padding: 20px 30px;
+  padding: 20px 27px;
 }
 
 .profile {
@@ -54,7 +59,8 @@ body,
 }
 
 .profile:last-of-type {
-  /* margin-left: 20px; */
+  margin-left: 20px;
+  line-height: 15px;
 }
 
 .profile:last-of-type p:last-of-type {
@@ -69,6 +75,7 @@ body,
 #share-button {
   float: right;
   padding: 10px;
+  margin-top: 1.5em;
 }
 
 #share-button:hover {
@@ -78,14 +85,14 @@ body,
 @media screen and (min-width: 1440px) {
   .flex-container {
     flex-direction: row;
-    min-width: 900px;
-    max-height: 245px;
+    min-width: 750px;
+    max-height: 295px;
   }
 
   #drawers-img {
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
-    clip-path: inset(0 70px 55px 0);
+    clip-path: inset(0 70px 5px 0);
   }
 
   .content {
@@ -94,5 +101,53 @@ body,
     margin-top: 0;
     margin-left: -70px;
     padding: 0 30px;
+  }
+
+  #info-content p:first-of-type {
+    width: 85%;
+  }
+
+  #info-content p:last-of-type {
+    width: 100%;
+  }
+
+  /* Popup container - can be anything you want */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* The actual popup */
+  .popup .popuptext {
+    display: none;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    display: block;
   }
 }
