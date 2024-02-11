@@ -1,6 +1,4 @@
-const shareButton = document.getElementById("share-button");
-
-shareButton.addEventListener("click", () => {
-  let popup = document.getElementById("myPopup");
+function myFunction() {
+  var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
-});
+}

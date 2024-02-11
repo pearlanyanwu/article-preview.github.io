@@ -7,60 +7,63 @@ body,
 
 * {
   font-family: 'Manrope', sans-serif;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
   max-width: 350px;
-  margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+#drawers-img {
+  clip-path: inset(20px 0 55px 0);
+}
+
 .content {
   background-color: hsl(0, 0%, 100%);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
   margin-top: -55px;
 }
 
-#drawers-img {
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  clip-path: inset(0 0 55px 0);
+#info-content,
+#profile-content {
+  margin: 30px 25px;
 }
 
-#info-content p:nth-child(1),
-.profile:last-of-type p:first-of-type {
+#first-p {
+  font-size: 1.18rem;
+}
+
+#first-p,
+.profile p:first-of-type {
   color: hsl(217, 19%, 35%);
   font-weight: 700;
 }
 
-#info-content p:nth-child(1) {
-  /* font-size: 18.7px; */
-}
-
-#info-content p:nth-child(2) {
+#second-p {
   color: hsl(214, 17%, 51%);
-  /* font-size: 15px; */
+  font-size: 0.9rem;
+  width: 99%;
 }
 
-.content {
-  padding: 20px 27px;
+#profile-content {
+  width: fit-content;
 }
 
-.profile {
+.profile,
+.share {
   display: inline-block;
   vertical-align: middle;
 }
 
 .profile:last-of-type {
-  margin-left: 20px;
-  line-height: 15px;
+  line-height: 1.5em;
+  margin-left: 15px;
+  font-size: xx-small;
 }
 
 .profile:last-of-type p:last-of-type {
@@ -74,24 +77,56 @@ body,
 
 #share-button {
   float: right;
-  padding: 10px;
-  margin-top: 1.5em;
+  padding: 15px;
+  margin-top: -5em;
+  margin-right: 2em;
 }
 
 #share-button:hover {
   cursor: pointer;
 }
 
-/* Popup container - can be anything you want */
+@media screen and (min-width: 1440px) {
+  .flex-container {
+    flex-direction: row;
+    min-width: 750px;
+    max-height: 295px;
+  }
+
+  #drawers-img {
+    clip-path: inset(0 70px 5px 0);
+  }
+
+  .content {
+    margin-top: 0;
+    margin-left: -70px;
+  }
+
+  #info-content,
+  #profile-content {
+    margin: 0;
+    margin: 20px 40px;
+  }
+
+  #first-p {
+    font-size: 1.3rem;
+  }
+
+  #share-button {
+    float: right;
+    margin-right: 4em;
+  }
+
+  /* Popup container */
 .popup {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-/* The actual popup */
+/* The actual popup (appears on top) */
 .popup .popuptext {
-  display: none;
+  visibility: hidden;
   width: 160px;
   background-color: #555;
   color: #fff;
@@ -117,77 +152,21 @@ body,
   border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class - hide and show the popup */
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-  display: block;
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
 }
 
-@media screen and (min-width: 1440px) {
-  .flex-container {
-    flex-direction: row;
-    min-width: 750px;
-    max-height: 295px;
-  }
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
-  #drawers-img {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 10px;
-    clip-path: inset(0 70px 5px 0);
-  }
-
-  .content {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-    margin-top: 0;
-    margin-left: -70px;
-    padding: 0 30px;
-  }
-
-  #info-content p:first-of-type {
-    width: 85%;
-  }
-
-  #info-content p:last-of-type {
-    width: 100%;
-  }
-
-  /* Popup container - can be anything you want */
-  .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  /* The actual popup */
-  .popup .popuptext {
-    display: none;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-    display: block;
-  }
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 }
