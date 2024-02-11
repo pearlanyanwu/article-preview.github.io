@@ -6,12 +6,11 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued Development](#continued-development)
+  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
 ## Overview
@@ -20,15 +19,12 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 Users should be able to:
 
+- View the optimal layout for the component depending on their device's screen size
 - See the social media share links when they click the share icon
-
-### Screenshot
-
-![](https://pearlanyanwu.github.io/article-preview.github.io/)
 
 ### Links
 
-Live Site URL: https://pearlanyanwu.github.io/article-preview.github.io/
+- Live Site URL: https://pearlanyanwu.github.io/article-preview.github.io/
 
 ## My process
 
@@ -40,29 +36,12 @@ Live Site URL: https://pearlanyanwu.github.io/article-preview.github.io/
 
 ### What I learned
 
-<!-- In this project, I learned how to implement hide/show functionality on a popup element using JS DOM manipulation.
+N/A
 
-```css
-span {
-  visibility: hidden;
-}
-.showApps {
-  visibility: visible;
-}
-```
-```js
-const shareButton = document.getElementById("share-button");
-const popup = document.getElementById("popup");
+### Continued development
 
-shareButton.addEventListener("click", () => {
-  popup.classList.toggle("showApps");
-});
-``` -->
-
-### Continued Development
-
-- Still working on responsiveness on smaller screen sizes.
+I've completed the mobile and desktop designs for the most part. I'm still learning how to activate the popup in its mobile design.
 
 ### Useful resources
 
-<!-- - [w3schools.com](https://www.w3schools.com/howto/howto_js_popup.asp) - This helped me create the popup and its functionality. -->
+- [w3schools.com](https://www.w3schools.com/howto/howto_js_popup.asp) - This helped me create the popup and its functionality.
