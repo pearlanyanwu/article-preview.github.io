@@ -36,12 +36,12 @@ Users should be able to:
 
 ### What I learned
 
-N/A
+I learned how to build a mobile-first design, then covert it to fit desktops.
 
 ### Continued development
 
-I've completed the mobile and desktop designs for the most part. I'm still learning how to activate the popup in its mobile design.
+I've completed the designs for the most part. The placement of the popup in the mobile view does not match the original design exactly, but it still functions as intended. In the near future, I will improve this.
 
 ### Useful resources
 
-- [w3schools.com](https://www.w3schools.com/howto/howto_js_popup.asp) - This helped me create the popup and its functionality.
+- [w3schools.com](https://www.w3schools.com/howto/howto_js_popup.asp) - This helped me create the popup and implement its functionality.
