@@ -61,9 +61,9 @@ body,
 }
 
 .profile:last-of-type {
-  line-height: 1.5em;
+  line-height: 0.5em;
   margin-left: 15px;
-  font-size: xx-small;
+  /* font-size: xx-small; */
 }
 
 .profile:last-of-type p:last-of-type {
@@ -105,7 +105,7 @@ body,
   #info-content,
   #profile-content {
     margin: 0;
-    margin: 20px 40px;
+    margin: 10px 40px;
   }
 
   #first-p {
@@ -116,57 +116,4 @@ body,
     float: right;
     margin-right: 4em;
   }
-
-  /* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 }
